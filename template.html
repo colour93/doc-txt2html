@@ -27,16 +27,16 @@
 <body>
 
     <div class="text" id="text">
+        <h1>{{title}}</h1>
         {{text}}
     </div>
 
     <script src="https://fur233.oss-cn-hangzhou.aliyuncs.com/common/js/darkmode-js.min.js"></script>
 
     <script>
-        function addDarkmodeWidget() {
+        window.onload = () => {
             new Darkmode().showWidget();
         }
-        window.addEventListener('load', addDarkmodeWidget);
     </script>
 
 </body>
