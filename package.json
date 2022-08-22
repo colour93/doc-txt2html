@@ -1,0 +1,14 @@
+{
+  "name": "doc-txt2html",
+  "version": "1.0.0",
+  "description": "文档转换：txt转html",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pretty": "^2.0.0"
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <style>
+        * {
+            font-family: 'PingFang', 'Microsoft YaHei';
+        }
+
+        p {
+            font-size: large;
+        }
+
+        @media (min-width: 1200px) {
+            body {
+                width: 1200px;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="text" id="text">
+        {{text}}
+    </div>
+
+    <script src="https://fur233.oss-cn-hangzhou.aliyuncs.com/common/js/darkmode-js.min.js"></script>
+
+    <script>
+        function addDarkmodeWidget() {
+            new Darkmode().showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+    </script>
+
+</body>
+
+</html>
