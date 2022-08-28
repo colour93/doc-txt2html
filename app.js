@@ -42,7 +42,8 @@ async function init () {
         let textList = [];
         for (let j = 0; j < contentAry.length; j++) {
             const text = contentAry[j];
-            textList.push(`<p>${text}</p>`);
+            if (text == '\r') textList.push(`<br>`)
+            else textList.push(`<p>${text}</p>`);
         }
 
         contentHtml = contentHtml.replace(/\{\{text\}\}/g, textList.join('\n'));
